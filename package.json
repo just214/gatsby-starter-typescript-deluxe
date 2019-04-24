@@ -10,15 +10,38 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "jest"
   },
   "dependencies": {
     "gatsby": "^2.3.27",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-typescript": "^2.0.13",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "tailwind.macro": "^0.5.10"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "@types/jest": "^24.0.11",
+    "@types/styled-components": "^4.1.14",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "babel-preset-gatsby": "^0.1.11",
+    "eslint": "^5.16.0",
+    "eslint-config-react-app": "^4.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-immutable": "^1.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-react": "^7.12.4",
+    "gatsby-plugin-eslint": "^2.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.7.1",
+    "prettier": "^1.17.0",
+    "react-test-renderer": "^16.8.6",
+    "tailwindcss": "^0.7.4",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
   },
   "repository": {
     "type": "git",

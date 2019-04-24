@@ -1,0 +1,12 @@
+{
+  "include": [
+    "./src/ts/**/*",
+    "./global.d.ts"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+    }
+}
