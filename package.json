@@ -10,7 +10,11 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "dependencies": {
     "gatsby": "^2.3.27",
@@ -22,10 +26,17 @@
     "tailwind.macro": "^0.5.10"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-actions": "^5.0.10",
+    "@storybook/addon-links": "^5.0.10",
+    "@storybook/addons": "^5.0.10",
+    "@storybook/react": "^5.0.10",
     "@types/jest": "^24.0.11",
     "@types/styled-components": "^4.1.14",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-gatsby": "^0.1.11",
     "eslint": "^5.16.0",

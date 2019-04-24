@@ -1,0 +1,12 @@
+# path/to/project/root/.eslintignore
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+
+# Ignore built files except build/index.js
+__tests__/*
+__mocks__/*
+build/*
+!build/index.js
+tailwind.js
+loadershim.ts 
+jest.config.ts
+gatsby-config.js

@@ -1,7 +1,7 @@
 module.exports = {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
-    "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js",
+    "^.+\\.jsx?$": "<rootDir>/jest-preprocess.ts",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.([tj]sx?)$",
   moduleNameMapper: {
@@ -16,5 +16,5 @@ module.exports = {
     __PATH_PREFIX__: "",
   },
   testURL: "http://localhost",
-  setupFiles: ["<rootDir>/loadershim.js"],
+  setupFiles: ["<rootDir>/loadershim.ts"],
 };

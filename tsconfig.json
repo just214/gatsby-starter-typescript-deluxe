@@ -1,12 +1,19 @@
 {
   "include": [
     "./src/ts/**/*",
-    "./global.d.ts"
   ],
   "compilerOptions": {
     "target": "es5",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "node_modules/@types/",
+      "./src/@types/"
+    ],
     }
 }

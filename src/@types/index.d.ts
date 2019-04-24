@@ -1,4 +1,5 @@
-/// <reference path="node_modules/@types/react/index.d.ts"/>
+/// <reference types="react/index.d.ts"/>
+/// <reference types="styled-components/cssprop" />
 
 // Add support for css prop
 declare namespace React {

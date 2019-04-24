@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
-const apsLogo = require("../assets/aps-logo.svg");
+import apsLogo from "../assets/aps-logo.svg";
 
 const Button = styled.button`
   ${tw`bg-purple hover:bg-blue-dark text-white p-2 rounded`};
 `;
 
-export default () => (
+const App = () => (
   <div
     css={`
       text-align: center;
@@ -18,3 +18,5 @@ export default () => (
     <Button>Click me!</Button>
   </div>
 );
+
+export default App;
