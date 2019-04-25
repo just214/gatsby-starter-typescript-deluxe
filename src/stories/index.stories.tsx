@@ -6,7 +6,9 @@ import { linkTo } from "@storybook/addon-links";
 import { Button, Welcome } from "@storybook/react/demo";
 import Layout from "../components/layout";
 
-storiesOf("APS Logo", module).add("APS Logo", () => <Layout>Hello</Layout>);
+storiesOf("Layout", module).add("<Layout />", () => (
+  <Layout>This text should be centered</Layout>
+));
 
 storiesOf("Button", module)
   .add("with text", () => (

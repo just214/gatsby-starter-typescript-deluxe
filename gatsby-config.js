@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-typescript`,
+    // "gatsby-plugin-tailwindcss",
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,5 +25,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-typescript`,
   ],
 };

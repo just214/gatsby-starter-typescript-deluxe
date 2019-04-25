@@ -9,5 +9,5 @@ build/*
 tailwind.js
 loadershim.js
 jest.config.js
-gatsby-config.js
-jest-preprocess.js
+gatsby-config.ts
+jest-preprocess.ts
