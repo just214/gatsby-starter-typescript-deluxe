@@ -1,7 +1,17 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: "images",
+      },
+    },
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-eslint",
       options: {

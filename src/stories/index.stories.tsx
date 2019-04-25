@@ -4,10 +4,9 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 import { Button, Welcome } from "@storybook/react/demo";
+import Layout from "../components/layout";
 
-storiesOf("Welcome", module).add("to Storybook", () => (
-  <Welcome showApp={linkTo("Button")} />
-));
+storiesOf("APS Logo", module).add("APS Logo", () => <Layout>Hello</Layout>);
 
 storiesOf("Button", module)
   .add("with text", () => (

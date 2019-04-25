@@ -7,6 +7,7 @@ __mocks__/*
 build/*
 !build/index.js
 tailwind.js
-loadershim.ts 
-jest.config.ts
+loadershim.js
+jest.config.js
 gatsby-config.js
+jest-preprocess.js

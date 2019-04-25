@@ -1,7 +1,7 @@
 module.exports = {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
-    "^.+\\.jsx?$": "<rootDir>/jest-preprocess.ts",
+    "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.([tj]sx?)$",
   moduleNameMapper: {
@@ -14,7 +14,8 @@ module.exports = {
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
   globals: {
     __PATH_PREFIX__: "",
+    __LINK_PREFIX__: "",
   },
   testURL: "http://localhost",
-  setupFiles: ["<rootDir>/loadershim.ts"],
+  setupFiles: ["<rootDir>/loadershim.js"],
 };
