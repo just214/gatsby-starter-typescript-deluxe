@@ -1,13 +1,20 @@
-# path/to/project/root/.eslintignore
-# /node_modules/* and /bower_components/* in the project root are ignored by default
+# gatsby files
+.cache/*
+node_modules/*
+public/*
+.storybook/*
+@types
+__mocks__
+__tests__
 
-# Ignore built files except build/index.js
-__tests__/*
-__mocks__/*
-build/*
-!build/index.js
+gatsby-*.js
+!gatsby-ssr.js
+!gatsby-browser.js
+!gatsby-node.js
+
+jest*.js
+gatsby*.ts
+jest*.ts
+*.test.*
+*.spec.*
 tailwind.js
-loadershim.js
-jest.config.js
-gatsby-config.ts
-jest-preprocess.ts

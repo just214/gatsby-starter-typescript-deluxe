@@ -1,6 +1,6 @@
 {
   "include": [
-    "./src/ts/**/*",
+    "./src/**/*",
   ],
   "exclude": [
     "node_modules",
@@ -14,9 +14,9 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    // "typesRoot": [
-    //   "node_modules/@types/",
-    //   "./src/@types/"
-    // ],
+    "typeRoots": [
+      "node_modules/@types/",
+      "./src/@types/"
+    ],
     }
 }

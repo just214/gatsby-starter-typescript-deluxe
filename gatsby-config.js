@@ -1,7 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    title: `gatsby starter`,
+    description: `A starter library for building awesome React apps with Gatsby.`,
+    author: `APS Physics`,
+  },
   plugins: [
-    // "gatsby-plugin-tailwindcss",
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,18 +16,18 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     "gatsby-plugin-react-helmet",
+    `gatsby-plugin-typescript`,
     {
-      resolve: "gatsby-plugin-eslint",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        test: /\.ts$|\.tsx$/,
-        exclude: /(node_modules|.cache|public)/,
-        stages: ["develop"],
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
+        name: `aps-gatsby-starter`,
+        short_name: `aps-gatsby-starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/aps-logo.jpg`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-typescript`,
   ],
 };

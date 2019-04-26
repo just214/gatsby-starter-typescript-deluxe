@@ -1,14 +1,12 @@
 import React from "react";
-
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { linkTo } from "@storybook/addon-links";
-import { Button, Welcome } from "@storybook/react/demo";
-import Layout from "../components/layout";
+import { Button } from "@storybook/react/demo";
+import Footer from "../components/footer";
+import GithubLink from "../components/github-link";
 
-storiesOf("Layout", module).add("<Layout />", () => (
-  <Layout>This text should be centered</Layout>
-));
+storiesOf("GithubLink", module).add("<GithubLink />", () => <GithubLink />);
+storiesOf("Footer", module).add("<Footer />", () => <Footer />);
 
 storiesOf("Button", module)
   .add("with text", () => (

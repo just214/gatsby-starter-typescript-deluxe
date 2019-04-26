@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Layout from "../layout";
+import Footer from "../footer";
 import "jest-styled-components";
 
-describe("Layout", () => {
-  it("renders correctly", () => {
-    const tree = renderer.create(<Layout />).toJSON();
+describe("Footer", () => {
+  it("matches snapshot", () => {
+    const tree = renderer.create(<Footer />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

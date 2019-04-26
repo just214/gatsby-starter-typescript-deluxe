@@ -7,6 +7,7 @@ module.exports = ({ config }) => {
 
   // use @babel/preset-react for JSX and env (instead of staged presets)
   config.module.rules[0].use[0].options.presets = [
+    require.resolve("babel-preset-gatsby"),
     require.resolve("@babel/preset-react"),
     require.resolve("@babel/preset-env"),
   ];
@@ -23,6 +24,7 @@ module.exports = ({ config }) => {
     loader: require.resolve("babel-loader"),
     options: {
       presets: [["react-app", { flow: false, typescript: true }]],
+      plugins: ["babel-plugin-styled-components"],
     },
   });
 

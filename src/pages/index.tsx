@@ -1,33 +1,25 @@
 import React from "react";
-import styled from "styled-components";
-import tw from "tailwind.macro";
-
-// Components
 import Layout from "../components/layout";
-import APSLogo from "../components/aps-logo";
-
-const Title = styled.h1`
-  ${tw`text-gray p-1 font-sans`};
-`;
+import tw from "tailwind.macro";
+import SEO from "../components/seo";
 
 const App = () => (
   <Layout>
-    <APSLogo />
-    <Title>Gatsby Starter Kit 🤖</Title>
-    <a
-      href="https://github.com"
-      rel="noopener noreferrer"
-      target="_blank"
+    <SEO title="Home" keywords={[`neutron`, `proton`, `quark`, `physics`]} />
+
+    <code
       css={`
-        color: steelblue;
-        cursor: pointer;
-        &:hover {
-          opacity: 0.8;
+        ${tw`p-4 text-teal`};
+        background: #333;
+        border-radius: 10px;
+        font-size: 1.2vw;
+        @media (max-width: 800px) {
+          font-size: 1.8vw;
         }
       `}
     >
-      View on GitHub
-    </a>
+      gatsby new my-app https://github.com/gojutin/gatsby-starter.git
+    </code>
   </Layout>
 );
 
