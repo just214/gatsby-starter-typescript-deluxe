@@ -34,7 +34,7 @@ To start the development server:
 ```sh
 npm run develop
 ```
-Open your browser and visit [https://localhost:8080](https://localhost:8080)
+Open your browser and visit [http://localhost:8080](http://localhost:8080)
 
 ### Available Scripts
 
@@ -116,7 +116,7 @@ const MyComponent = () => (
 ```
 
 ## Storybook
-Storybook is available by creating stories in the `src/stories` directory and running the `npm run storybook` script. Your storybook will be availble at [https://localhost:6006](https://localhost:6006).
+Storybook is available by creating stories in the `src/stories` directory and running the `npm run storybook` script. Your storybook will be availble at [http://localhost:6006](http://localhost:6006).
 
 You can also compile a production build of your Storybook by running `npm run build:storybook`. The compiled production build will be located in a `/storybook-static` directory.
 

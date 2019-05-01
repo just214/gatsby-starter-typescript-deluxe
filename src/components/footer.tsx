@@ -10,6 +10,7 @@ const StyledFooter = styled.footer`
   background: #efefef;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   padding: 12px;
 `;

@@ -22,7 +22,7 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   description = "APS Physics",
   lang = "en",
-  meta = ["aps", "physics"],
+  meta = [],
   keywords = ["aps", "physics"],
   title = "APS Physics",
 }) => {
