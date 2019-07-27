@@ -17,8 +17,6 @@ You will need to have `node` and `npm` installed on your computer.
 
 You can either use `npx` or install the `gatsby-cli` globally with `npm`.
 
-**Recommended:**
-
 ```sh
 npx gatsby new [PROJECT_NAME] https://github.com/gojutin/gatsby-starter.git
 ```
@@ -62,11 +60,9 @@ This project includes tight **ESLint** rules to ensure quality code. Many of the
 
 The **ESLint** rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
 
-`0` : off
-
-`1`: warn
-
-`2`: error
+| 0   |  1   |   2   |
+| --- | :--: | :---: |
+| off | warn | error |
 
 Here is an example of a rule:
 
@@ -75,26 +71,6 @@ Here is an example of a rule:
 ```
 
 This particular rule disallows the use of the `this` keyword, which will result in an error.
-
-## Deployment
-
-Lint your files and fix all linting issues.
-
-```sh
-npm run lint
-```
-
-Run your test suite and fix any broken tests.
-
-```sh
-npm run test
-```
-
-Compile a production build to the `/public` directory.
-
-```sh
-npm run build
-```
 
 ## Styling
 
@@ -121,5 +97,25 @@ const MyComponent = () => (
 Storybook is available by creating stories in the `src/stories` directory and running the `npm run storybook` script. Your storybook will be availble at [http://localhost:6006](http://localhost:6006).
 
 You can also compile a production build of your Storybook by running `npm run build:storybook`. The compiled production build will be located in a `/storybook-static` directory.
+
+## Deployment
+
+Lint your files and fix all linting issues.
+
+```sh
+npm run lint
+```
+
+Run your test suite and fix any broken tests.
+
+```sh
+npm run test
+```
+
+Compile a production build to the `/public` directory.
+
+```sh
+npm run build
+```
 
 Build something awesome 😀
