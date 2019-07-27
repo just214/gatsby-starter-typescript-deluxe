@@ -1,11 +1,10 @@
 /// <reference types="react/index.d.ts"/>
 /// <reference types="styled-components/cssprop" />
 
-
 // Add support for css prop
 declare namespace React {
   interface DOMAttributes<T> {
-    css?: any
+    css?: any;
   }
 }
 

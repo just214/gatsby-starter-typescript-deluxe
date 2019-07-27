@@ -17,4 +17,3 @@ gatsby*.ts
 jest*.ts
 *.test.*
 *.spec.*
-tailwind.js

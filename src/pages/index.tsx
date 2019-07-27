@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import tw from "tailwind.macro";
 import SEO from "../components/seo";
 
 const App = () => (
@@ -9,8 +8,9 @@ const App = () => (
 
     <code
       css={`
-        ${tw`p-4 text-teal`};
         background: #333;
+        color: white;
+        padding: 10px 20px;
         border-radius: 10px;
         font-size: 1.2vw;
         @media (max-width: 800px) {
@@ -18,7 +18,8 @@ const App = () => (
         }
       `}
     >
-      gatsby new my-app https://github.com/gojutin/gatsby-starter.git
+      gatsby new my-app
+      https://github.com/gojutin/gatsby-starter-typescript-deluxe.git
     </code>
   </Layout>
 );

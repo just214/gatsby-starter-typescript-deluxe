@@ -1,5 +1,4 @@
 import React from "react";
-import tw from "tailwind.macro";
 import styled from "styled-components";
 import GithubLink from "./github-link";
 
@@ -18,7 +17,6 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <div css={tw`px-5`}>© 2019 American Physical Society</div>
       <GithubLink />
     </StyledFooter>
   );

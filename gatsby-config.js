@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `gatsby starter`,
     description: `A starter library for building awesome React apps with Gatsby.`,
-    author: `APS Physics`,
+    author: `gojutin`,
   },
   plugins: [
     {
@@ -20,13 +20,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `aps-gatsby-starter`,
-        short_name: `aps-gatsby-starter`,
+        name: `gatsby-starter-typescript-deluxe`,
+        short_name: `gatsby-starter-typescript-deluxe`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/aps-logo.jpg`, // This path is relative to the root of the site.
       },
     },
   ],

@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer matches snapshot 1`] = `
-.c1 {
-  margin: 0;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -21,6 +17,7 @@ exports[`Footer matches snapshot 1`] = `
   background: #efefef;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   padding: 12px;
 }
@@ -29,23 +26,12 @@ exports[`Footer matches snapshot 1`] = `
   className="c0"
 >
   <div
-    css={
-      Object {
-        "paddingLeft": "1.25rem",
-        "paddingRight": "1.25rem",
-      }
-    }
-  >
-    © 2019 American Physical Society
-  </div>
-  <div
-    className="c1"
+    className=""
   >
     <a
       css="
         color: steelblue;
         cursor: pointer;
-        [object Object]
       "
       href="https://github.com/gojutin/gatsby-starter"
       rel="noopener noreferrer"

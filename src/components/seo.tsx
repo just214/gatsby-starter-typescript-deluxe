@@ -20,11 +20,11 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-  description = "APS Physics",
+  description = "A Gatsby starter with TypeScript, Storybook, Styled Components, and more.",
+  keywords = ["gatsby", "typescript"],
   lang = "en",
   meta = [],
-  keywords = ["aps", "physics"],
-  title = "APS Physics",
+  title = "gatsby-starter-typescript-deluxe",
 }) => {
   const { site } = useStaticQuery(
     graphql`
