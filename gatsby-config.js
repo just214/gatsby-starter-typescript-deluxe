@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `gatsby starter`,
-    description: `A starter library for building awesome React apps with Gatsby.`,
+    title: `gatsby-starter-typescript-deluxe`,
+    description: `A Gatsby starter with TypeScript, Storybook, Styled Components, and more.`,
     author: `gojutin`,
   },
   plugins: [
