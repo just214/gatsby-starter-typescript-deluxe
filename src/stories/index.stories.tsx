@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { Button } from "@storybook/react/demo";
 import Footer from "../components/footer";
-import GithubLink from "../components/github-link";
+import GithubLink from "../components/github-icon/github-icon";
 
 storiesOf("GithubLink", module).add("<GithubLink />", () => <GithubLink />);
 storiesOf("Footer", module).add("<Footer />", () => <Footer />);

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import GithubLink from "./github-link";
+import GithubLink from "../github-icon/github-icon/github-icon";
 
 const StyledFooter = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
   background: #efefef;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;

@@ -18,14 +18,14 @@ You will need to have `node` and `npm` installed on your computer.
 You can either use `npx` or install the `gatsby-cli` globally with `npm`.
 
 ```sh
-npx gatsby new [PROJECT_NAME] https://github.com/gojutin/gatsby-starter.git
+npx gatsby new [PROJECT_NAME] https://github.com/gojutin/gatsby-starter-typescript-deluxe
 ```
 
 _-or-_
 
 ```sh
 npm i -g gatsby-cli
-gatsby new [PROJECT_NAME] https://github.com/gojutin/gatsby-starter.git
+gatsby new [PROJECT_NAME] https://github.com/gojutin/gatsby-starter-typescript-deluxe
 ```
 
 To start the development server:

@@ -1,9 +1,9 @@
 {
   "include": [
-    "./src/**/*",
+    "./src/**/*"
   ],
   "exclude": [
-    "node_modules",
+    "node_modules"
   ],
   "compilerOptions": {
     "target": "es5",
