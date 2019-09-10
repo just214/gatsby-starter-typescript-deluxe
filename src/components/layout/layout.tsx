@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
-import Footer from "../footer/footerr";
+import Footer from "../footer/footer";
 
 const GlobalStyle = createGlobalStyle`
   body {

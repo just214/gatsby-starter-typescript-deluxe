@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GithubLink from "../github-icon/github-icon/github-icon";
+import GithubLink from "../github-icon/github-icon";
 
 const StyledFooter = styled.footer`
   display: flex;
