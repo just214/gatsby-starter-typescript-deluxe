@@ -2,91 +2,48 @@ import React from "react";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-interface SEOProps {
-  description?: string;
-  keywords?: string[];
-  lang?: string;
-  meta?: string[];
-  title: string;
-}
-
-const SEO: React.FC<SEOProps> = ({
-  description,
-  keywords = ["gatsby", "typescript"],
-  lang = "en",
-  meta = [],
-  title,
-}) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
+const SEO = () => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          url
         }
       }
-    `
-  );
+    }
+  `);
 
-  const metaTitle = title || site.siteMetadata.title;
-  const metaDescription = description || site.siteMetadata.description;
+  const metaData = data.site.siteMetadata;
 
+  const { title, description, url } = metaData;
+  const siteImage = `${url}/gatsby.png`;
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={metaTitle}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      /*eslint-disable */
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        /*eslint-enable */
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                content: keywords.join(`, `),
-                name: `keywords`,
-              }
-            : []
-        )
-        .concat(meta)}
-    />
+    <Helmet>
+      <html lang="en" />
+      <title>{title}</title>
+      <meta charSet="utf-8" />
+      <link rel="canonical" href={url} />
+      <meta name="description" content={description} />
+      <meta name="image" content={siteImage} />
+
+      <meta property="og:url" content={url} />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={siteImage} />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={"@gojutin"} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={siteImage} />
+
+      <link rel="shortcut icon" href="favicon.ico" />
+      <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+    </Helmet>
   );
 };
 

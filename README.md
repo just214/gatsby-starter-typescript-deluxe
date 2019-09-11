@@ -5,7 +5,7 @@
 This starter library is pre-configured with the following integrations:
 
 - **TypeScript**
-- **ESLint**
+- **ESLint (with TSLint)**
 - **Styled-Components**
 - **Storybook**
 - **Jest**
