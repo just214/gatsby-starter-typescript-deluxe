@@ -2,8 +2,10 @@
 
 exports[`matches snapshot 1`] = `
 <DocumentFragment>
-  <h3>
-    Hello Bob
-  </h3>
+  <button
+    class="sc-bdVaJa cjEIaC"
+  >
+    Hello World!
+  </button>
 </DocumentFragment>
 `;

@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
 
-// import GithubIcon from "../images/github.svg";
-
 const Wrapper = styled.div``;
 
 const GithubLink = () => {
@@ -24,7 +22,7 @@ const GithubLink = () => {
   return (
     <Wrapper>
       <a
-        href="https://github.com/gojutin/gatsby-starter"
+        href="https://github.com/gojutin/gatsby-starter-typescript-deluxe"
         rel="noopener noreferrer"
         target="_blank"
         css={`

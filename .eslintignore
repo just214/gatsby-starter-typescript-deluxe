@@ -9,6 +9,7 @@ __tests__
 
 gatsby-*.js
 loadershim.ts
+stories/*
 
 jest*.js
 gatsby*.ts

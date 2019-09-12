@@ -1,5 +1,4 @@
-// eslint-disable-next-line
-global.___loader = {
-  // eslint-disable-next-line
+// @ts-ignore
+global.___loader = { 
   enqueue: jest.fn(),
 };
