@@ -4,7 +4,7 @@
   "compilerOptions": {
     "target": "es5",
     "jsx": "react",
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "noUnusedLocals": true,

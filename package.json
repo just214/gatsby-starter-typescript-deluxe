@@ -31,6 +31,7 @@
     "gatsby": "^2.15.12",
     "gatsby-image": "^2.2.18",
     "gatsby-plugin-manifest": "^2.2.16",
+    "gatsby-plugin-react-axe": "^0.2.2",
     "gatsby-plugin-react-helmet": "^3.1.7",
     "gatsby-plugin-sharp": "^2.2.21",
     "gatsby-plugin-styled-components": "^3.1.5",
@@ -43,12 +44,12 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@testing-library/react": "^9.1.4",
     "@babel/core": "^7.6.0",
     "@storybook/addon-actions": "^5.1.11",
     "@storybook/addon-links": "^5.1.11",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
+    "@testing-library/react": "^9.1.4",
     "@types/jest": "^24.0.18",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
@@ -64,11 +65,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "babel-preset-gatsby": "^0.2.13",
     "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.2.0",
-    "eslint-plugin-immutable": "^1.0.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
+    "eslint-config-gojutin": "^0.0.2",
     "eslint-watch": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
@@ -77,7 +74,6 @@
     "npm-check-updates": "^3.1.22",
     "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
-    "tslint": "^5.20.0",
     "typescript": "^3.6.2"
   }
 }

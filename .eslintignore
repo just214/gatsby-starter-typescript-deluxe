@@ -8,9 +8,7 @@ __mocks__
 __tests__
 
 gatsby-*.js
-!gatsby-ssr.js
-!gatsby-browser.js
-!gatsby-node.js
+loadershim.ts
 
 jest*.js
 gatsby*.ts

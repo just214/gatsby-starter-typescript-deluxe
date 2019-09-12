@@ -3,6 +3,7 @@ module.exports = {
     title: `gatsby-starter-typescript-deluxe`,
     description: `A Gatsby starter with TypeScript, Storybook, Styled Components, and more.`,
     author: `@gojutin`,
+    url: ${__dirname}
   },
   plugins: [
     {
@@ -10,6 +11,17 @@ module.exports = {
       options: {
         path: `${__dirname}/src/images`,
         name: "images",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-axe",
+      options: {
+        showInProduction: false,
+        // Options to pass to axe-core.
+        // See: https://github.com/dequelabs/axe-core/blob/master/doc/API.md#api-name-axeconfigure
+        axeOptions: {
+          // Your axe-core options.
+        },
       },
     },
     `gatsby-plugin-styled-components`,

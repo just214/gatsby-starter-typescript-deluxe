@@ -10,6 +10,7 @@ This starter library is pre-configured with the following integrations:
 - **Storybook**
 - **Jest**
 - **React Testing library**
+- **React Axe and React A11y for accessibility**
 
 ## Usage
 

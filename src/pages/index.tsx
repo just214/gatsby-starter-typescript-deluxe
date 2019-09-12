@@ -2,11 +2,9 @@ import React from "react";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo/seo";
 
-const sdf = 4;
-
 const App = () => (
   <Layout>
-    <SEO title="Home" keywords={[`neutron`, `proton`, `quark`, `physics`]} />
+    <SEO title="Home" />
     <hr />
     <h3>Getting Started</h3>
     <code
