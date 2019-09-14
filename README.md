@@ -84,7 +84,7 @@ const MyComponent = () => (
     </h1>
   </div>
 );
-
+```
 
 ## Linting
 
