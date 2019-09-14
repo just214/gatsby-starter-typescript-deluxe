@@ -105,7 +105,6 @@ Here is an example of a rule:
 ```
 
 This particular rule disallows the use of the `this` keyword, which will result in an error.
-```
 
 ## Storybook
 
