@@ -37,6 +37,7 @@ const SEO: React.FC<SEOProps> = props => {
       <link rel="canonical" href={siteUrl} />
       <meta name="description" content={siteDescription} />
       <meta name="image" content={siteImage} />
+      <meta property="keywords" content={(props.keywords || []).join(",")} />
 
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="article" />

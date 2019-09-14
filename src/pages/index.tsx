@@ -4,17 +4,16 @@ import SEO from "../components/seo/seo";
 
 const App = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <hr />
     <h3>Getting Started</h3>
     <code
       css={`
         color: ${props => props.theme.blue};
         padding: 10px 0px;
-
-        font-size: 1.2vw;
+        font-size: 1.2rem;
         @media (max-width: 800px) {
-          font-size: 1.8vw;
+          font-size: 1rem;
         }
       `}
     >
