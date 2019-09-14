@@ -5,19 +5,19 @@
 This starter library is pre-configured with the following integrations:
 
 - **TypeScript**
-- **ESLint (with TSLint)**
 - **Styled-Components**
-- **gatsby-image**
-- **Storybook**
-- **Jest**
-- **React Testing library**
+- **gatsby-image and gatsby-transformer-sharp**
+- **gatsby-plugin-manifest with SEO component**
+- **Storybook with add-ons**
+- **Jest and React Testing library**
+- **ESLint (with TSLint)**
 - **React Axe and React A11y for accessibility**
 
 ## Usage
 
 You will need to have `node` and `npm` installed on your computer.
 
-You can either use `npx` or install the `gatsby-cli` globally with `npm`.
+You can either use `npx` or install the `gatsby-cli` globally with `npm` or `yarn`.
 
 ```sh
 npx gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
@@ -26,7 +26,7 @@ npx gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-delu
 _-or-_
 
 ```sh
-npm i -g gatsby-cli
+npm i -g gatsby-cli (or yarn global add gatsby-cli)
 gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
 ```
 
@@ -36,7 +36,16 @@ To start the development server:
 npm run develop
 ```
 
-Open your browser and visit [http://localhost:8080](http://localhost:8080)
+If all was successful, you should see links to two development servers in the terminal.
+
+[http://localhost:8080](http://localhost:8080):
+
+This is the development server that allows you to preview your website. It comes with hot-module reloading, which means that you should see your changes almost immediately without having to refresh the browser tab.
+
+[http://localhost:8000/___graphql](http://localhost:8000/___graphql):
+
+This is the development server that provides a Graphiql interface, which allows you to interact with the your site's data via a GraphQL end point.
+
 
 ### Available Scripts
 
@@ -48,34 +57,14 @@ Open your browser and visit [http://localhost:8080](http://localhost:8080)
 | `clean`           | Delete the `.cache` and `public` directories.                     |
 | `test`            | Run your **Jest** tests once.                                     |
 | `test:watch`      | Run your **Jest** tests in watch mode.                            |
-| `storybook`       | Starts **Storybook**.                                             |
 | `lint`            | Lint your code with **ESLint**.                                   |
 | `lint:watch`      | Lint your code with **ESLint** in watch mode.                     |
 | `lint:fix`        | Lint your code with **ESLint** and attempt to fix linting issues. |
 | `serve`           | Serve the production build of your site for testing.              |
 | `build`           | Compile your application and make it ready for deployment         |
+| `storybook`       | Starts **Storybook**.                                             |
 | `build-storybook` | Compiles your stories and makes them ready for deployment.        |
 | `update`          | Updates all dependencies to the latest version.                   |
-
-## Linting
-
-This project includes a combination of **ESLint** and **TSLint** rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
-
-The rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
-
-`0` : off
-
-`1`: warn
-
-`2`: error
-
-Here is an example of a rule:
-
-```
-"immutable/no-this": 2
-```
-
-This particular rule disallows the use of the `this` keyword, which will result in an error.
 
 ## Styling
 
@@ -95,6 +84,27 @@ const MyComponent = () => (
     </h1>
   </div>
 );
+
+
+## Linting
+
+This project includes a combination of **ESLint**, **TSLint**, and **React-A11y** rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions. 
+
+The rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
+
+`0` : off
+
+`1`: warn
+
+`2`: error
+
+Here is an example of a rule:
+
+```
+"immutable/no-this": 2
+```
+
+This particular rule disallows the use of the `this` keyword, which will result in an error.
 ```
 
 ## Storybook

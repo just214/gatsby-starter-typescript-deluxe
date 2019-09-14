@@ -16,5 +16,5 @@ module.exports = {
     __PATH_PREFIX__: "",
   },
   testURL: "http://localhost",
-  setupFiles: ["<rootDir>/loadershim.ts"],
+  setupFiles: ["<rootDir>/jest-loadershim.ts"],
 };
