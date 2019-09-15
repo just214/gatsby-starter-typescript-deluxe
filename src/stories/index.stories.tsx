@@ -14,8 +14,8 @@ stories.add("with text", () => (
     disabled={boolean("Disabled", false)}
     css={text(
       "CSS",
-      `background: teal;
-color: white;`
+      `background: #cce6ff;
+color: #333;`,
     )}
   >
     {text("Label", "Hello Storybook")}

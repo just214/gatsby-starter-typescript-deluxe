@@ -9,6 +9,7 @@ This starter library is pre-configured with the following integrations:
 - **gatsby-image and gatsby-transformer-sharp**
 - **gatsby-plugin-manifest with SEO component**
 - **Storybook with add-ons**
+- **framer-motion for animations**
 - **Jest and React Testing library**
 - **ESLint (with TSLint)**
 - **React Axe and React A11y for accessibility**
@@ -26,7 +27,7 @@ npx gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-delu
 _-or-_
 
 ```sh
-npm i -g gatsby-cli (or yarn global add gatsby-cli)
+npm i -g gatsby-cli
 gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
 ```
 
@@ -38,14 +39,13 @@ npm run develop
 
 If all was successful, you should see links to two development servers in the terminal.
 
-[http://localhost:8080](http://localhost:8080):
+1. [http://localhost:8080](http://localhost:8080):
 
 This is the development server that allows you to preview your website. It comes with hot-module reloading, which means that you should see your changes almost immediately without having to refresh the browser tab.
 
-[http://localhost:8000/___graphql](http://localhost:8000/___graphql):
+2. [http://localhost:8000/\_\_\_graphql](http://localhost:8000/___graphql):
 
-This is the development server that provides a Graphiql interface, which allows you to interact with the your site's data via a GraphQL end point.
-
+This is the development server that allows you to interact with the your site's GraphQL data via the GraphiQL IDE.
 
 ### Available Scripts
 
@@ -86,9 +86,17 @@ const MyComponent = () => (
 );
 ```
 
+### CSS Debugger
+
+This starter also includes a `useCSSDebugger` custom hook. This hook allows you to drop a component into your layout that can toggle outlines around all elements for easy style debugging. It also includes a toggle button that you can optionally use during debugging.
+
+**_Note: You can drag the toggle button around if it gets in your way._**
+
+The `useCSSDebugger` custom hook is located in `src/hooks/useCSSDebugger.tsx` and is used in the `layout.tsx` component.
+
 ## Linting
 
-This project includes a combination of **ESLint**, **TSLint**, and **React-A11y** rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions. 
+This project includes a combination of **ESLint**, **TSLint**, and **React-A11y** rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
 
 The rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
 
@@ -132,4 +140,4 @@ Compile a production build to the `/public` directory.
 npm run build
 ```
 
-Now, build something awesome 😀
+That's about it. Now, build something awesome 😀

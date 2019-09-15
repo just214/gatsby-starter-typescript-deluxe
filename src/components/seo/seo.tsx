@@ -22,9 +22,9 @@ const SEO: React.FC<SEOProps> = props => {
     }
   `);
 
-  const metaData = data.site.siteMetadata;
+  const { siteMetadata } = data.site;
 
-  const { title, description, url } = metaData;
+  const { title, description, url } = siteMetadata;
   const siteTitle = props.title || title;
   const siteDescription = props.description || description;
   const siteUrl = props.url || url;

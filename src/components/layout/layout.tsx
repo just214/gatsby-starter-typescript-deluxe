@@ -2,20 +2,21 @@ import React from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import Footer from "../footer/footer";
+import useCSSDebugger from "../../hooks/useCSSDebugger";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    background: #183653;
   }
   html {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   }
-
 `;
 
 const theme = {
-  blue: "rgb(50, 104, 168)",
+  blue: "#0099ff",
 };
 
 const Container = styled.div`
@@ -25,12 +26,14 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 20px 0px;
+  color: white;
 `;
 
 const Tagline = styled.h2`
   font-size: 1.2rem;
+  color: ${props => props.theme.blue};
 `;
 
 const Layout = ({ children }) => {
@@ -47,10 +50,22 @@ const Layout = ({ children }) => {
 
   const { title, description } = data.site.siteMetadata;
 
+  const CSSDebugger = useCSSDebugger();
+
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <GlobalStyle />
+        <GlobalStyles />
+        <CSSDebugger
+          debug={false}
+          showToggle={true}
+          showGrid={true}
+          buttonStyle={{
+            background: "lightskyblue",
+            color: "#333",
+            border: "2px solid orange",
+          }}
+        />
         <Title>{title.toUpperCase()}</Title>
         <Tagline>{description}</Tagline>
         <main>{children}</main>

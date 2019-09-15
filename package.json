@@ -27,6 +27,7 @@
     "update": "ncu -u"
   },
   "dependencies": {
+    "framer-motion": "^1.6.7",
     "gatsby": "^2.15.15",
     "gatsby-image": "^2.2.19",
     "gatsby-plugin-manifest": "^2.2.16",
@@ -61,7 +62,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "babel-preset-gatsby": "^0.2.13",
     "eslint": "^6.4.0",
-    "eslint-config-gojutin": "^0.0.3",
+    "eslint-config-gojutin": "^0.0.4",
     "eslint-watch": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",

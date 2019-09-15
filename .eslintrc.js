@@ -3,8 +3,5 @@
 //***********************************************************
 module.exports = {
   extends: ["gojutin"],
-  rules: {
-    // This rule is triggered by styled components with no props or interface.
-    "@typescript-eslint/explicit-function-return-type": 0,
-  },
+  rules: {},
 };

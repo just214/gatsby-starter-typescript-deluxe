@@ -2,6 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div``;
 
@@ -21,17 +22,17 @@ const GithubLink = () => {
   const imageData = data.icon.childImageSharp.fixed;
   return (
     <Wrapper>
-      <a
+      <motion.a
         href="https://github.com/gojutin/gatsby-starter-typescript-deluxe"
         rel="noopener noreferrer"
         target="_blank"
         css={`
-          color: steelblue;
           cursor: pointer;
         `}
+        whileHover={{ opacity: 0.5 }}
       >
         <Img fixed={imageData} />
-      </a>
+      </motion.a>
     </Wrapper>
   );
 };
