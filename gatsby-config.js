@@ -39,15 +39,15 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: "src/images/icons/icon_512x512.png",
+        icon: "src/images/icon.png",
         icons: [
           {
-            src: "src/images/icons/icon_512x512.png",
+            src: "icons/icon_512x512.png",
             sizes: "512x512",
             types: "image/png",
           },
           {
-            src: "src/images/icons/icon_192x192.png",
+            src: "icons/icon_192x192.png",
             sizes: "192x192",
             types: "image/png",
           },

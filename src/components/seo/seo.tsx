@@ -28,7 +28,7 @@ const SEO: React.FC<SEOProps> = props => {
   const siteTitle = props.title || title;
   const siteDescription = props.description || description;
   const siteUrl = props.url || url;
-  const siteImage = `${siteUrl}/icon_512x512.png`;
+  const siteImage = `${siteUrl}/icons/icon_512x512.png`;
   return (
     <Helmet>
       <html lang="en" />
