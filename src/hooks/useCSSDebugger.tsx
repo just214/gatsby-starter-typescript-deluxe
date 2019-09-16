@@ -65,7 +65,7 @@ const useCSSDebugger = () => {
     showToggle = false,
     showGrid = true,
     buttonStyle,
-    color = "red",
+    color = "rgba(255, 0, 0, .75)",
   }) => {
     const [isDebug, setIsDebug] = useState(debug);
 

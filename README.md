@@ -104,15 +104,15 @@ The `useCSSDebugger` custom hook is located in `src/hooks/useCSSDebugger.tsx` an
 
 ## Linting
 
-This project includes a combination of ESLint, TSLint, and React-A11y rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
+This project includes a combination of ESLint, TSLint, and React-A11y rules for React and TypeScript code, which are extended from the [eslint-config-gojutin](https://github.com/gojutin/eslint-config-gojutin) npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions. Since all of the rules and dependencies are included in this package, you can easily remove it if you prefer to wire up your own linting configuration.
 
 The rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
 
-`0` : off
-
-`1`: warn
-
-`2`: error
+|     |       |
+| --- | :---- |
+| `0` | off   |
+| `1` | warn  |
+| `2` | error |
 
 Here is an example of a rule:
 

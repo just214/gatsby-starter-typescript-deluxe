@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import Footer from "../footer/footer";
 import useCSSDebugger from "../../hooks/useCSSDebugger";
 
@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: #183653;
+    color: white;
   }
   html {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -60,14 +61,21 @@ const Layout = ({ children }) => {
           debug={false}
           showToggle={true}
           showGrid={true}
-          color="red"
+          color="rgba(255, 0, 0, .75)"
           buttonStyle={{
             background: "lightskyblue",
             color: "#333",
             border: "2px solid orange",
           }}
         />
-        <Title>{title.toUpperCase()}</Title>
+        <Link
+          to="/"
+          css={`
+            text-decoration: none;
+          `}
+        >
+          <Title>{title.toUpperCase()}</Title>
+        </Link>
         <Tagline>{description}</Tagline>
         <main>{children}</main>
         <Footer />
