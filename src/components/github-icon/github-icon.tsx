@@ -31,7 +31,7 @@ const GithubLink = () => {
         `}
         whileHover={{ opacity: 0.5 }}
       >
-        <Img fixed={imageData} />
+        <Img fixed={imageData} alt="GitHub Icon" />
       </motion.a>
     </Wrapper>
   );
