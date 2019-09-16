@@ -28,7 +28,7 @@ const SEO: React.FC<SEOProps> = props => {
   const siteTitle = props.title || title;
   const siteDescription = props.description || description;
   const siteUrl = props.url || url;
-  const siteImage = `${siteUrl}/gatsby.png`;
+  const siteImage = `${siteUrl}/icon_512x512.png`;
   return (
     <Helmet>
       <html lang="en" />
@@ -52,7 +52,7 @@ const SEO: React.FC<SEOProps> = props => {
       <meta name="twitter:image" content={siteImage} />
 
       <link rel="shortcut icon" href="favicon.ico" />
-      <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+      <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     </Helmet>
   );
 };

@@ -6,10 +6,10 @@ This starter library is pre-configured with the following integrations:
 
 - **TypeScript**
 - **Styled-Components**
+- **Framer Motion**
 - **gatsby-image and gatsby-transformer-sharp**
-- **gatsby-plugin-manifest with SEO component**
+- **gatsby-plugin-manifest / SEO component**
 - **Storybook with add-ons**
-- **framer-motion for animations**
 - **Jest and React Testing library**
 - **ESLint (with TSLint)**
 - **React Axe and React A11y for accessibility**

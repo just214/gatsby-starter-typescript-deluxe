@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `gatsby-starter-typescript-deluxe`,
-    description: `A Gatsby starter with TypeScript, Storybook, Styled Components, Jest, and more.`,
+    description: `A Gatsby starter with TypeScript, Storybook, Styled Components, Framer Motion, Jest, and more.`,
     author: `@gojutin`,
     url: __dirname,
   },
@@ -34,10 +34,24 @@ module.exports = {
       options: {
         name: `gatsby-starter-typescript-deluxe`,
         short_name: `gatsby-starter-typescript-deluxe`,
+        description: `A Gatsby starter with TypeScript, Storybook, Styled Components, Framer Motion, Jest, and more.`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: "src/images/icons/icon_512x512.png",
+        icons: [
+          {
+            src: "src/images/icons/icon_512x512.png",
+            sizes: "512x512",
+            types: "image/png",
+          },
+          {
+            src: "src/images/icons/icon_192x192.png",
+            sizes: "192x192",
+            types: "image/png",
+          },
+        ],
       },
     },
   ],
