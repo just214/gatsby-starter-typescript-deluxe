@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: #183653;
+    background: ${props => props.theme.darkblue}; 
     color: white;
   }
   html {
@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
 
 const theme = {
   blue: "#0099ff",
+  darkblue: "#183653",
 };
 
 const Container = styled.div`

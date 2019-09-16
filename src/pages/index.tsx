@@ -9,7 +9,7 @@ const App = () => (
     <code
       css={`
         display: inline-block;
-        color: ${props => props.theme.blue};
+        color: ${props => props.theme.darkblue};
         font-size: 1.5rem;
         background: #f5f5f5;
         margin-top: 40px;
