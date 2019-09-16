@@ -1,8 +1,8 @@
 # gatsby-starter-typescript-deluxe 🌟
 
-## A starter library for creating React applications with Gatsby and TypeScript.
+### A starter library for creating React applications with Gatsby and TypeScript.
 
-### [View Demo](https://gatsby-starter-typescript-deluxe.netlify.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-starter-typescript-deluxe/deploys)
+#### [View Demo](https://gatsby-starter-typescript-deluxe.netlify.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-starter-typescript-deluxe/deploys)
 
 This starter library is pre-configured with the following integrations:
 
@@ -16,11 +16,11 @@ This starter library is pre-configured with the following integrations:
 - **ESLint (with TSLint and Prettier)** to make your code look its best.
 - **React Axe and React A11y for accessibility** so that your site is awesome for everyone.
 
-## Usage
+## Installation
 
 You will need to have `node` and `npm` installed on your computer.
 
-You can either use `npx` or install the `gatsby-cli` globally with `npm` or `yarn`.
+You can either use `npx` or install the `gatsby-cli` globally.
 
 The `npx` way:
 
@@ -35,7 +35,9 @@ npm i -g gatsby-cli
 gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
 ```
 
-To start the development server:
+## Usage
+
+To start the development servers:
 
 ```sh
 npm run develop
