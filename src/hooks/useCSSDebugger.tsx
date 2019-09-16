@@ -28,14 +28,14 @@ type ComponentProps = {
   buttonStyle?: React.CSSProperties;
 };
 
-const getDebugStyles = ({ debug }: ComponentProps) => {
+const getDebugStyles = ({ debug, color }: ComponentProps) => {
   if (!debug) {
     return "";
   }
   return `
   background: rgba(211,211,211, 0.2) !important;
   outline-style: solid !important;
-  outline-color: rgba(255, 0, 0, .6) !important;
+  outline-color: ${color} !important;
   outline-width: 2px !important;
   `;
 };
@@ -49,6 +49,7 @@ const useCSSDebugger = () => {
   const GlobalStyle = createGlobalStyle<{
     debug: boolean;
     showGrid?: boolean;
+    color?: string;
   }>`
   html, * {
     ${props => getDebugStyles(props)};
@@ -64,6 +65,7 @@ const useCSSDebugger = () => {
     showToggle = false,
     showGrid = true,
     buttonStyle,
+    color = "red",
   }) => {
     const [isDebug, setIsDebug] = useState(debug);
 
@@ -75,7 +77,7 @@ const useCSSDebugger = () => {
     };
     return (
       <>
-        <GlobalStyle debug={isDebug} showGrid={showGrid} />
+        <GlobalStyle debug={isDebug} showGrid={showGrid} color={color} />
         {showToggle && (
           <ToggleDebugButton style={buttonStyle} debug={isDebug} onTap={toggle}>
             Debug CSS

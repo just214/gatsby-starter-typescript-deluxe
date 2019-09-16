@@ -60,6 +60,7 @@ const Layout = ({ children }) => {
           debug={false}
           showToggle={true}
           showGrid={true}
+          color="red"
           buttonStyle={{
             background: "lightskyblue",
             color: "#333",
