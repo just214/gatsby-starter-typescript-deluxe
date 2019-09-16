@@ -2,29 +2,33 @@
 
 ## A starter library for creating React applications with Gatsby and TypeScript.
 
+### [View Demo](https://gatsby-starter-typescript-deluxe.netlify.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-starter-typescript-deluxe/deploys)
+
 This starter library is pre-configured with the following integrations:
 
-- **TypeScript**
-- **Styled-Components**
-- **Framer Motion**
-- **gatsby-image and gatsby-transformer-sharp**
-- **gatsby-plugin-manifest / SEO component**
-- **Storybook with add-ons**
-- **Jest and React Testing library**
-- **ESLint (with TSLint)**
-- **React Axe and React A11y for accessibility**
+- **TypeScript** for type-safe code.
+- **Styled-Components** for your super styles.
+- **Framer Motion** for awesome animations.
+- **gatsby-image and gatsby-transformer-sharp** for optimized images.
+- **gatsby-plugin-manifest / SEO component** for PWA and SEO.
+- **Storybook with add-ons** for showing off your awesome components.
+- **Jest and React Testing library** for snapshots and unit tests.
+- **ESLint (with TSLint and Prettier)** to make your code look its best.
+- **React Axe and React A11y for accessibility** so that your site is awesome for everyone.
 
 ## Usage
 
-You will need to have `node` and `npm` installed on your computer.
+You will just need to have `node` and `npm` installed on your computer.
 
 You can either use `npx` or install the `gatsby-cli` globally with `npm` or `yarn`.
+
+The `npx` way:
 
 ```sh
 npx gatsby new my-site https://github.com/gojutin/gatsby-starter-typescript-deluxe
 ```
 
-_-or-_
+or the global way:
 
 ```sh
 npm i -g gatsby-cli
@@ -37,7 +41,7 @@ To start the development server:
 npm run develop
 ```
 
-If all was successful, you should see links to two development servers in the terminal.
+If all was successful, you should see links to two development servers in the Node terminal. You can open these url in any browser that you would like.
 
 1. [http://localhost:8080](http://localhost:8080):
 
@@ -49,22 +53,22 @@ This is the development server that allows you to interact with the your site's 
 
 ### Available Scripts
 
-| Script            | Description                                                       |
-| ----------------- | :---------------------------------------------------------------- |
-| `develop`         | Start the development server with hot module reloading.           |
-| `dev`             | Alias for `develop`.                                              |
-| `format`          | Format your code with **Prettier**.                               |
-| `clean`           | Delete the `.cache` and `public` directories.                     |
-| `test`            | Run your **Jest** tests once.                                     |
-| `test:watch`      | Run your **Jest** tests in watch mode.                            |
-| `lint`            | Lint your code with **ESLint**.                                   |
-| `lint:watch`      | Lint your code with **ESLint** in watch mode.                     |
-| `lint:fix`        | Lint your code with **ESLint** and attempt to fix linting issues. |
-| `serve`           | Serve the production build of your site for testing.              |
-| `build`           | Compile your application and make it ready for deployment         |
-| `storybook`       | Starts **Storybook**.                                             |
-| `build-storybook` | Compiles your stories and makes them ready for deployment.        |
-| `update`          | Updates all dependencies to the latest version.                   |
+| Script            | Description                                                                  |
+| ----------------- | :--------------------------------------------------------------------------- |
+| `develop`         | Start the development server with hot module reloading.                      |
+| `dev`             | Alias for `develop`.                                                         |
+| `format`          | Format your code with **Prettier**.                                          |
+| `clean`           | Delete the `.cache` and `public` directories.                                |
+| `test`            | Run your **Jest** tests once.                                                |
+| `test:watch`      | Run your **Jest** tests in watch mode.                                       |
+| `lint`            | Lint your code with **ESLint**.                                              |
+| `lint:watch`      | Lint your code with **ESLint** in watch mode.                                |
+| `lint:fix`        | Lint your code with **ESLint** and attempt to fix linting issues.            |
+| `serve`           | Serve the production build of your site for testing.                         |
+| `build`           | Compile your application and make it ready for deployment                    |
+| `storybook`       | Starts **Storybook**.                                                        |
+| `build-storybook` | Compiles your stories and makes them ready for deployment.                   |
+| `update`          | Updates all dependencies to the latest version using **npm-check-updates** . |
 
 ## Styling
 

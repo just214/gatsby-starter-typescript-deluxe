@@ -3,7 +3,7 @@ module.exports = {
     title: `gatsby-starter-typescript-deluxe`,
     description: `A Gatsby starter with TypeScript, Storybook, Styled Components, Framer Motion, Jest, and more.`,
     author: `@gojutin`,
-    url: __dirname,
+    url: "https://gatsby-starter-typescript-deluxe.netlify.com",
   },
   plugins: [
     {
