@@ -100,7 +100,7 @@ This starter also includes a `useCSSDebugger` custom hook. This hook allows you 
 
 The `useCSSDebugger` custom hook is located in `src/hooks/useCSSDebugger.tsx` and is used in the `layout.tsx` component.
 
-<img src="https://res.cloudinary.com/gojutin/image/upload/v1568598334/gatsby-starter-typescript-deluxe/css-debugger.gif" alt="GIF of css debugger" style="max-width: 100%;" />
+<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660140/gatsby-starter-typescript-deluxe/css-debugger.gif" alt="GIF of css debugger" style="max-width: 100%;" />
 
 ## Linting
 
@@ -147,5 +147,9 @@ Compile a production build to the `/public` directory.
 ```sh
 npm run build
 ```
+
+## Lighthouse Audit Score 💯
+
+<img src="https://res.cloudinary.com/gojutin/image/upload/v1568660306/gatsby-starter-typescript-deluxe/gatsby-starter-typescript-deluxe-lighthouse-audit.gif" style="max-width: 100%;" alt="Lighthouse Score" />
 
 That's about it. Now, build something awesome 😀

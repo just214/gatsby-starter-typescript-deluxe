@@ -1,25 +1,10 @@
 import React from "react";
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Footer from "../footer/footer";
 import useCSSDebugger from "../../hooks/useCSSDebugger";
-
-const GlobalStyles = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    background: ${props => props.theme.darkblue}; 
-    color: white;
-  }
-  html {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  }
-`;
-
-const theme = {
-  blue: "#0099ff",
-  darkblue: "#183653",
-};
+import theme from "./theme";
+import GlobalStyles from "./global-styles";
 
 const Container = styled.div`
   margin: 0 auto;
