@@ -7,10 +7,10 @@
 This starter library is pre-configured with the following integrations:
 
 - **TypeScript** for type-safe code.
-- **Styled-Components** for your super styles.
+- **Styled-Components** for all your styles.
 - **Framer Motion** for awesome animations.
 - **gatsby-image and gatsby-transformer-sharp** for optimized images.
-- **gatsby-plugin-manifest / SEO component** for PWA and SEO.
+- **gatsby-plugin-manifest / SEO component** for an SEO-friendly PWA.
 - **Storybook with add-ons** for showing off your awesome components.
 - **Jest and React Testing library** for snapshots and unit tests.
 - **ESLint (with TSLint and Prettier)** to make your code look its best.
@@ -18,7 +18,7 @@ This starter library is pre-configured with the following integrations:
 
 ## Usage
 
-You will just need to have `node` and `npm` installed on your computer.
+You will need to have `node` and `npm` installed on your computer.
 
 You can either use `npx` or install the `gatsby-cli` globally with `npm` or `yarn`.
 
@@ -90,13 +90,15 @@ const MyComponent = () => (
 );
 ```
 
-### CSS Debugger
+## CSS Debugger
 
 This starter also includes a `useCSSDebugger` custom hook. This hook allows you to drop a component into your layout that can toggle outlines around all elements for easy style debugging. It also includes a toggle button that you can optionally use during debugging.
 
 **_Note: You can drag the toggle button around if it gets in your way._**
 
 The `useCSSDebugger` custom hook is located in `src/hooks/useCSSDebugger.tsx` and is used in the `layout.tsx` component.
+
+<img src="https://res.cloudinary.com/gojutin/image/upload/v1568598334/gatsby-starter-typescript-deluxe/css-debugger.gif" alt="GIF of css debugger" style="max-width: 100%;" />
 
 ## Linting
 
