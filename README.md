@@ -53,26 +53,26 @@ This is the development server that allows you to interact with the your site's 
 
 ### Available Scripts
 
-| Script            | Description                                                                  |
-| ----------------- | :--------------------------------------------------------------------------- |
-| `develop`         | Start the development server with hot module reloading.                      |
-| `dev`             | Alias for `develop`.                                                         |
-| `format`          | Format your code with **Prettier**.                                          |
-| `clean`           | Delete the `.cache` and `public` directories.                                |
-| `test`            | Run your **Jest** tests once.                                                |
-| `test:watch`      | Run your **Jest** tests in watch mode.                                       |
-| `lint`            | Lint your code with **ESLint**.                                              |
-| `lint:watch`      | Lint your code with **ESLint** in watch mode.                                |
-| `lint:fix`        | Lint your code with **ESLint** and attempt to fix linting issues.            |
-| `serve`           | Serve the production build of your site for testing.                         |
-| `build`           | Compile your application and make it ready for deployment                    |
-| `storybook`       | Starts **Storybook**.                                                        |
-| `build-storybook` | Compiles your stories and makes them ready for deployment.                   |
-| `update`          | Updates all dependencies to the latest version using **npm-check-updates** . |
+| Script            | Description                                                              |
+| ----------------- | :----------------------------------------------------------------------- |
+| `develop`         | Start the development server with hot module reloading.                  |
+| `dev`             | Alias for `develop`.                                                     |
+| `format`          | Format your code with Prettier.                                          |
+| `clean`           | Delete the `.cache` and `public` directories.                            |
+| `test`            | Run your Jest tests once.                                                |
+| `test:watch`      | Run your Jest tests in watch mode.                                       |
+| `lint`            | Lint your code with ESLint.                                              |
+| `lint:watch`      | Lint your code with ESLint in watch mode.                                |
+| `lint:fix`        | Lint your code with ESLint and attempt to fix linting issues.            |
+| `serve`           | Serve the production build of your site for testing.                     |
+| `build`           | Compile your application and make it ready for deployment                |
+| `storybook`       | Starts Storybook.                                                        |
+| `build-storybook` | Compiles your stories and makes them ready for deployment.               |
+| `update`          | Updates all dependencies to the latest version using npm-check-updates . |
 
 ## Styling
 
-This library is pre-configured to work with **Styled-Components** and works with the `css` prop:
+This library is pre-configured to work with Styled-Components and works with the `css` prop:
 
 ```jsx
 import styled from "styled-components";
@@ -102,7 +102,7 @@ The `useCSSDebugger` custom hook is located in `src/hooks/useCSSDebugger.tsx` an
 
 ## Linting
 
-This project includes a combination of **ESLint**, **TSLint**, and **React-A11y** rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
+This project includes a combination of ESLint, TSLint, and React-A11y rules for React and TypeScript code, which are extended from the `eslint-config-gojutin` npm package. Many of the rules favor a functional approach with a strong emphasis on immutability and strong type definitions.
 
 The rules are listed as key/value pairs. The key represents the rule name and the value (number) represents the setting of the rule:
 
