@@ -36,7 +36,7 @@ const getDebugStyles = ({ debug, color }: ComponentProps) => {
   background: rgba(211,211,211, 0.2) !important;
   outline-style: solid !important;
   outline-color: ${color} !important;
-  outline-width: 2px !important;
+  outline-width: thin !important;
   `;
 };
 
@@ -72,6 +72,7 @@ const useCSSDebugger = () => {
     useEffect(() => {
       setIsDebug(debug);
     }, [debug]);
+
     const toggle = () => {
       setIsDebug(v => !v);
     };

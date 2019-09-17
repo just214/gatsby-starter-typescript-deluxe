@@ -63,7 +63,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "babel-preset-gatsby": "^0.2.13",
     "eslint": "^6.4.0",
-    "eslint-config-gojutin": "^0.0.4",
+    "eslint-config-gojutin": "^0.0.5",
     "eslint-watch": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
