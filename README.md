@@ -152,4 +152,9 @@ npm run build
 
 <img src="https://res.cloudinary.com/gojutin/image/upload/v1568660306/gatsby-starter-typescript-deluxe/gatsby-starter-typescript-deluxe-lighthouse-audit.gif" style="max-width: 100%;" alt="Lighthouse Score" />
 
+## TODOS
+
+- Write more robust unit tests for all components and custom hook.
+- Possible add support for MDX and markdown.
+
 That's about it. Now, build something awesome 😀

@@ -28,7 +28,7 @@ type ComponentProps = {
   buttonStyle?: React.CSSProperties;
 };
 
-const getDebugStyles = ({ debug, color }: ComponentProps) => {
+const getDebugStyles = ({ debug, color }: ComponentProps): string => {
   if (!debug) {
     return "";
   }
@@ -76,14 +76,17 @@ const useCSSDebugger = () => {
     const toggle = () => {
       setIsDebug(v => !v);
     };
+
+    const maybeRenderToggleButton = showToggle && (
+      <ToggleDebugButton style={buttonStyle} debug={isDebug} onTap={toggle}>
+        Debug CSS
+      </ToggleDebugButton>
+    );
+
     return (
       <>
         <GlobalStyle debug={isDebug} showGrid={showGrid} color={color} />
-        {showToggle && (
-          <ToggleDebugButton style={buttonStyle} debug={isDebug} onTap={toggle}>
-            Debug CSS
-          </ToggleDebugButton>
-        )}
+        {maybeRenderToggleButton}
       </>
     );
   };

@@ -3,5 +3,7 @@
 //***********************************************************
 module.exports = {
   extends: ["gojutin"],
-  rules: {},
+  rules: {
+    "@typescript-eslint/explicit-function-return-type": 0,
+  },
 };

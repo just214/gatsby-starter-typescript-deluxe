@@ -1,10 +1,11 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import Footer from "../footer/footer";
 import useCSSDebugger from "../../hooks/useCSSDebugger";
 import theme from "./theme";
 import GlobalStyles from "./global-styles";
+import Link from "../link/link";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -23,7 +24,7 @@ const Tagline = styled.h2`
   color: ${props => props.theme.blue};
 `;
 
-const Layout = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -39,6 +40,12 @@ const Layout = ({ children }) => {
 
   const CSSDebugger = useCSSDebugger();
 
+  const buttonStyle = {
+    background: "lightskyblue",
+    color: "#333",
+    border: "2px solid orange",
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Container>
@@ -48,18 +55,9 @@ const Layout = ({ children }) => {
           showToggle={true}
           showGrid={true}
           color="rgba(255, 0, 0, .75)"
-          buttonStyle={{
-            background: "lightskyblue",
-            color: "#333",
-            border: "2px solid orange",
-          }}
+          buttonStyle={buttonStyle}
         />
-        <Link
-          to="/"
-          css={`
-            text-decoration: none;
-          `}
-        >
+        <Link to="/">
           <Title>{title.toUpperCase()}</Title>
         </Link>
         <Tagline>{description}</Tagline>

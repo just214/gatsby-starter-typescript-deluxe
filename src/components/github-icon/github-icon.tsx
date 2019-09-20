@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Wrapper = styled.div``;
 
-const GithubLink = () => {
+const GithubLink: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       icon: file(relativePath: { eq: "github-icon.png" }) {
@@ -26,6 +26,7 @@ const GithubLink = () => {
         href="https://github.com/gojutin/gatsby-starter-typescript-deluxe"
         rel="noopener noreferrer"
         target="_blank"
+        // eslint-disable-next-line
         css={`
           cursor: pointer;
         `}

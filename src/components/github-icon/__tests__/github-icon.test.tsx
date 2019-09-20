@@ -1,5 +1,5 @@
 import React from "react";
-import SEO from "./seo";
+import GithubIcon from "../github-icon";
 import { render, cleanup } from "@testing-library/react";
 import * as Gatsby from "gatsby";
 const useStaticQuery = jest.spyOn(Gatsby, "useStaticQuery");
@@ -7,11 +7,9 @@ const useStaticQuery = jest.spyOn(Gatsby, "useStaticQuery");
 beforeEach(() => {
   useStaticQuery.mockImplementationOnce(() => {
     return {
-      site: {
-        siteMetadata: {
-          title: "Test",
-          description: "Test",
-          author: "@test",
+      icon: {
+        childImageSharp: {
+          fixed: "gatsby-logo.png",
         },
       },
     };
@@ -21,6 +19,6 @@ beforeEach(() => {
 afterEach(cleanup);
 
 it("matches snapshot", () => {
-  const { asFragment } = render(<SEO />);
+  const { asFragment } = render(<GithubIcon />);
   expect(asFragment()).toMatchSnapshot();
 });

@@ -1,46 +1,18 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo/seo";
+import Code from "../components/code/code";
+import Link from "../components/link/link";
 
 const App = () => (
   <Layout>
     <SEO />
-    <code
-      css={`
-        display: inline-block;
-        color: ${props => props.theme.darkblue};
-        font-size: 1.5rem;
-        background: #f5f5f5;
-        margin-top: 40px;
-        border-radius: 5px;
-        padding: 10px;
-        @media (max-width: 800px) {
-          font-size: 1rem;
-        }
-        ::before {
-          content: "$ ";
-        }
-      `}
-    >
+    <Code>
       gatsby new my-app
       https://github.com/gojutin/gatsby-starter-typescript-deluxe
-    </code>
+    </Code>
 
-    <Link
-      to="/about"
-      css={`
-        margin-top: 20px;
-        display: block;
-        color: white;
-        text-decoration: none;
-        :hover {
-          text-decoration: underline;
-        }
-      `}
-    >
-      About
-    </Link>
+    <Link to="/about">About</Link>
   </Layout>
 );
 
