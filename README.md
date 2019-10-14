@@ -155,6 +155,6 @@ npm run build
 ## TODOS
 
 - Write more robust unit tests for all components and custom hook.
-- Possible add support for MDX and markdown.
+- Possibly add support for MDX and markdown.
 
 That's about it. Now, build something awesome 😀
