@@ -1,7 +1,7 @@
 import React from "react";
 import { RouteComponentProps } from "@reach/router";
-import Layout from "../components/layout/layout";
-import SEO from "../components/seo/seo";
+import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
 export type AboutPageProps = RouteComponentProps;
 

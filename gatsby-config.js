@@ -1,9 +1,19 @@
+const siteTitle = "gatsby-starter-typescript-deluxe";
+const siteDescription =
+  "A Gatsby starter with TypeScript, Storybook, Styled Components, Framer Motion, Jest, and more.";
+const siteAuthor = "@gojutin";
+const siteUrl = "https://gatsby-starter-typescript-deluxe.netlify.com";
+const siteImage = `${siteUrl}/icons/icon_512x512.png`;
+const siteKeywords = ["gatsby", "typescript", "starter", "javascript", "react"];
+
 module.exports = {
   siteMetadata: {
-    title: `gatsby-starter-typescript-deluxe`,
-    description: `A Gatsby starter with TypeScript, Storybook, Styled Components, Framer Motion, Jest, and more.`,
-    author: `@gojutin`,
-    url: "https://gatsby-starter-typescript-deluxe.netlify.com",
+    title: siteTitle,
+    description: siteDescription,
+    author: siteAuthor,
+    url: siteUrl,
+    keywords: siteKeywords,
+    image: siteImage,
   },
   plugins: [
     {
@@ -32,9 +42,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-typescript-deluxe`,
-        short_name: `gatsby-starter-typescript-deluxe`,
-        description: `A Gatsby starter with TypeScript, Storybook, Styled Components, Framer Motion, Jest, and more.`,
+        name: siteTitle,
+        short_name: siteTitle,
+        description: siteDescription,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

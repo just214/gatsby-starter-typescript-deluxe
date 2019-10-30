@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    // @ts-ignore
     background: ${props => props.theme.darkblue}; 
     color: white;
   }
@@ -12,4 +13,4 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export default GlobalStyles;
+export { GlobalStyles };

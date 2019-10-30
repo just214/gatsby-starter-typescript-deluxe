@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Wrapper = styled.div``;
 
-const GithubLink: React.FC = () => {
+const GithubIcon: React.FC = () => {
   const data = useStaticQuery(graphql`
     query {
       icon: file(relativePath: { eq: "github-icon.png" }) {
@@ -38,4 +38,4 @@ const GithubLink: React.FC = () => {
   );
 };
 
-export default GithubLink;
+export { GithubIcon };

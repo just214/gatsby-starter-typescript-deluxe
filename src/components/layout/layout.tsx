@@ -1,11 +1,10 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
-import Footer from "../footer/footer";
 import useCSSDebugger from "../../hooks/useCSSDebugger";
-import theme from "./theme";
-import GlobalStyles from "./global-styles";
-import Link from "../link/link";
+import { theme, GlobalStyles } from "../../styles";
+import { Link } from "../link";
+import { Footer } from "../footer";
 
 const Container = styled.div`
   margin: 0 auto;
@@ -68,4 +67,4 @@ const Layout: React.FC = ({ children }) => {
   );
 };
 
-export default Layout;
+export { Layout };

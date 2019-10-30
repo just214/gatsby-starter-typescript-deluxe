@@ -37,6 +37,7 @@ const getDebugStyles = ({ debug, color }: ComponentProps): string => {
   outline-style: solid !important;
   outline-color: ${color} !important;
   outline-width: thin !important;
+
   `;
 };
 

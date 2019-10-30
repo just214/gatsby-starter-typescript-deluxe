@@ -16,4 +16,4 @@ const Code = styled.code`
   }
 `;
 
-export default Code;
+export { Code };

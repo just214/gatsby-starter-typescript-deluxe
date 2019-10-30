@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../button";
+import { Button } from "../button";
 import { render } from "@testing-library/react";
 
 it("matches snapshot", () => {

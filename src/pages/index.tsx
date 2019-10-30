@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/layout/layout";
-import SEO from "../components/seo/seo";
-import Code from "../components/code/code";
-import Link from "../components/link/link";
+import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
+import { Code } from "../components/code";
+import { Link } from "../components/link";
 
 const App = () => (
   <Layout>

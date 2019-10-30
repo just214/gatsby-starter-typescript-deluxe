@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 
-const StyledLink = styled(Link)`
+const Link = styled(GatsbyLink)`
   margin-top: 20px;
   display: block;
   color: white;
@@ -11,4 +11,4 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export default StyledLink;
+export { Link };

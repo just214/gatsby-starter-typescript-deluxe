@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import Layout from "../components/layout/layout";
-import SEO from "../components/seo/seo";
+import { Layout } from "../components/layout";
+import { SEO } from "../components/seo";
 
-const NotFoundPage = () => (
+const NotFoundPage: React.FC = () => (
   <Layout>
     <SEO title="404: Not found" />
     <h1>Oops! 404</h1>
