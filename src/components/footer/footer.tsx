@@ -21,7 +21,7 @@ const FooterContainer = styled.div`
 `;
 
 const Footer: React.FC = () => {
-  const { blue } = useTheme();
+  const { blue } = useTheme().colors;
   return (
     <StyledFooter>
       {/* This svg was created at https://getwaves.io/ */}

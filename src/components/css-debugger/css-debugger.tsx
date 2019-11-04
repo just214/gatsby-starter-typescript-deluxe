@@ -15,18 +15,10 @@ const ToggleDebugButton = styled(motion.button).attrs(() => ({
   padding: 5px;
   border-radius: 5px;
   border: 2px solid orange;
-  background-color: white;
+  background: orange;
   color: #333;
   z-index: 5000;
 `;
-
-type ComponentProps = {
-  debug?: boolean;
-  showToggle?: boolean;
-  color?: string;
-  showGrid?: boolean;
-  buttonStyle?: React.CSSProperties;
-};
 
 const getDebugStyles = ({ debug, color }: ComponentProps): string => {
   if (!debug) {
@@ -46,53 +38,56 @@ background-size: 10px 10px !important;
 background-image: linear-gradient(to right, lightgray 1px, transparent 1px), linear-gradient(to bottom, lightgray 1px, transparent 1px) !important;
 `;
 
-const useCSSDebugger = () => {
+interface CSSDebuggerProps {
+  debug?: boolean;
+  showToggle?: boolean;
+  color?: string;
+  showGrid?: boolean;
+  buttonStyle?: React.CSSProperties;
+}
+
+const CSSDebugger: React.FC<CSSDebuggerProps> = ({
+  debug = false,
+  showToggle = true,
+  showGrid = true,
+  buttonStyle,
+  color = "rgba(255, 0, 0, .75)",
+}) => {
+  const [isDebug, setIsDebug] = useState(debug);
   const GlobalStyle = createGlobalStyle<{
     debug: boolean;
     showGrid?: boolean;
     color?: string;
   }>`
-  html, * {
-    ${props => getDebugStyles(props)};
-  }
+    html, * {
+      ${props => getDebugStyles(props)};
+    }
+  
+    html {
+      ${props => props.debug && props.showGrid && gridStyles};
+    }
+  `;
 
-  html {
-    ${props => props.debug && props.showGrid && gridStyles};
-  }
-`;
+  useEffect(() => {
+    setIsDebug(debug);
+  }, [debug]);
 
-  const Component: React.FC<ComponentProps> = ({
-    debug = false,
-    showToggle = false,
-    showGrid = true,
-    buttonStyle,
-    color = "rgba(255, 0, 0, .75)",
-  }) => {
-    const [isDebug, setIsDebug] = useState(debug);
-
-    useEffect(() => {
-      setIsDebug(debug);
-    }, [debug]);
-
-    const toggle = () => {
-      setIsDebug(v => !v);
-    };
-
-    const maybeRenderToggleButton = showToggle && (
-      <ToggleDebugButton style={buttonStyle} debug={isDebug} onTap={toggle}>
-        Debug CSS
-      </ToggleDebugButton>
-    );
-
-    return (
-      <>
-        <GlobalStyle debug={isDebug} showGrid={showGrid} color={color} />
-        {maybeRenderToggleButton}
-      </>
-    );
+  const toggle = () => {
+    setIsDebug(v => !v);
   };
 
-  return Component;
+  const maybeRenderToggleButton = showToggle && (
+    <ToggleDebugButton style={buttonStyle} debug={isDebug} onTap={toggle}>
+      Debug CSS
+    </ToggleDebugButton>
+  );
+
+  return (
+    <>
+      <GlobalStyle debug={isDebug} showGrid={showGrid} color={color} />
+      {maybeRenderToggleButton}
+    </>
+  );
 };
 
-export default useCSSDebugger;
+export { CSSDebugger };

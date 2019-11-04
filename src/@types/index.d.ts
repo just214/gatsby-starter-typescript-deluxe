@@ -1,10 +1,18 @@
 /// <reference types="react/index.d.ts"/>
 /// <reference types="styled-components/cssprop" />
 
+import "styled-components";
+
 // Add support for css prop
 declare namespace React {
   interface DOMAttributes<T> {
     css?: any;
+  }
+}
+
+declare module "styled-components" {
+  export interface DefaultTheme {
+    [key: string]: any | DefaultTheme;
   }
 }
 
@@ -18,6 +26,7 @@ declare module "*.svg" {
 declare global {
   namespace NodeJS {
     export interface Global {
-       ___loader: any;
+      ___loader: any;
+    }
   }
 }

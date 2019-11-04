@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Code = styled.code`
   display: inline-block;
-  color: ${props => props.theme.darkblue};
+  color: ${props => props.theme.colors.darkblue};
   font-size: 1.5rem;
   background: #f5f5f5;
   margin-top: 40px;
