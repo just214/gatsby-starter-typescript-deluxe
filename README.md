@@ -1,6 +1,6 @@
 # gatsby-starter-typescript-deluxe 🌟
 
-### An opinionated starter library for creating React applications with Gatsby (v2) and TypeScript. 
+### An opinionated starter library for creating React applications with Gatsby (v2) and TypeScript.
 
 ### [View Demo](https://gatsby-starter-typescript-deluxe.netlify.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-starter-typescript-deluxe/deploys)
 
@@ -56,36 +56,36 @@ This is the development server that allows you to interact with the your site's 
 
 ### Available Scripts
 
-| Script            | Description                                                  |
-| ----------------- | :----------------------------------------------------------- |
-| `develop`         | Start the development server with hot module reloading.      |
-| `dev`             | Alias for `develop`.                                         |
-| `format`          | Format your code with Prettier.                              |
-| `clean`           | Delete the `.cache` and `public` directories.                |
-| `test`            | Run your Jest tests once.                                    |
-| `test:watch`      | Run your Jest tests in watch mode.                           |
-| `lint`            | Lint your code with ESLint.                                  |
-| `lint:watch`      | Lint your code with ESLint in watch mode.                    |
-| `lint:fix`        | Lint your code with ESLint and attempt to fix linting issues. |
-| `serve`           | Serve the production build of your site for testing.         |
-| `build`           | Compile your application and make it ready for deployment    |
-| `storybook`       | Starts Storybook.                                            |
-| `build-storybook` | Compiles your stories and makes them ready for deployment.   |
+| Script            | Description                                                                         |
+| ----------------- | :---------------------------------------------------------------------------------- |
+| `develop`         | Start the development server with hot module reloading.                             |
+| `dev`             | Alias for `develop`.                                                                |
+| `format`          | Format your code with Prettier.                                                     |
+| `clean`           | Delete the `.cache` and `public` directories.                                       |
+| `test`            | Run your Jest tests once.                                                           |
+| `test:watch`      | Run your Jest tests in watch mode.                                                  |
+| `lint`            | Lint your code with ESLint.                                                         |
+| `lint:watch`      | Lint your code with ESLint in watch mode.                                           |
+| `lint:fix`        | Lint your code with ESLint and attempt to fix linting issues.                       |
+| `serve`           | Serve the production build of your site for testing.                                |
+| `build`           | Compile your application and make it ready for deployment                           |
+| `storybook`       | Starts Storybook.                                                                   |
+| `build-storybook` | Compiles your stories and makes them ready for deployment.                          |
 | `update`          | Updates the package.json to the latest dependency versions using npm-check-updates. |
 
 ## Styling
 
 This library is pre-configured with [styled-components](https://www.styled-components.com/).
 
-####Global Styles
+#### Global Styles
 
 Global styles are defined in the `src/styles/global-styles.tsx` file using the `createGlobalStyle` function provided by styled-components. The global styles are injected in the `Layout` component via the component that is provided from the `createGlobalStyle` function.
 
-The global style also includes the styles from [css-modern-reset](https://github.com/hankchizljaw/modern-css-reset), which aims to provide a sensible reset of browser styles. 
+The global style also includes the styles from [css-modern-reset](https://github.com/hankchizljaw/modern-css-reset), which aims to provide a sensible reset of browser styles.
 
 #### Theme
 
-You can define your theme styles in the `/src/styles/theme` file. The theme will be available in any styled-component via `props.theme` and to any other component via the `useTheme` hook. 
+You can define your theme styles in the `/src/styles/theme` file. The theme will be available in any styled-component via `props.theme` and to any other component via the `useTheme` hook.
 
 You can see examples of using the theme in a styled-component in the `Layout` component and an example with a regular component in the `Footer` component.
 
@@ -93,9 +93,9 @@ You can see examples of using the theme in a styled-component in the `Layout` co
 
 The theme utilizes the [use-media](https://github.com/streamich/use-media) library, which allows you to track the state of a CSS media queries. This works by passing a boolean for each screen size that you defined in your theme. Just define your screen sizes in the `SCREENS` constant (in `src/styles/theme`). You can see an example of usage in the `Title` component definition in the `src/components/layout/layout.tsx` file.
 
-####The CSS Prop
+#### The CSS Prop
 
-This starter is also preconfigured to work with the  `css` prop:
+This starter is also preconfigured to work with the `css` prop:
 
 ```jsx
 import styled from "styled-components";
@@ -113,7 +113,7 @@ const MyComponent = () => (
 );
 ```
 
-Note: The `css` prop does not play nicely with the `jsx-no-multiline-js` ESLint rule. You may want to disable the rule if you plan on using the `css` prop. This can be done in the `.eslintrc.js` file.
+_Note: The `css` prop does not play nicely with the `jsx-no-multiline-js` ESLint rule. You may want to disable the rule if you plan on using the `css` prop. This can be done in the `.eslintrc.js` file._
 
 I personally do not use the `css` prop and prefer to define styled-components outside of the component definition. My general rule is if the component that is using a styled-component is the only component that uses it, I define the styled-component in the same file. Otherwise, I will move it out to a `components/common` directory.
 
@@ -121,19 +121,15 @@ I personally do not use the `css` prop and prefer to define styled-components ou
 import styled from "styled-components";
 
 const Heading = styled.h1`
-	color: #333;
+  color: #333;
 `;
 
 const MyComponent = () => (
   <div>
-    <Heading>
-      Hello World!
-    </Heading>
+    <Heading>Hello World!</Heading>
   </div>
 );
 ```
-
-
 
 ## CSS Debugger
 
@@ -141,7 +137,7 @@ This starter also includes a `CSSDebugger` component. This component allows you 
 
 **_Note: You can drag the toggle button around if it gets in your way._**
 
-The `useCSSDebugger` is used in the `layout.tsx` component.
+The `CSSDebugger` component is used in the `layout.tsx` component.
 
 <img src="https://res.cloudinary.com/gojutin/image/upload/v1568660140/gatsby-starter-typescript-deluxe/css-debugger.gif" alt="GIF of css debugger" style="max-width: 100%;" />
 
