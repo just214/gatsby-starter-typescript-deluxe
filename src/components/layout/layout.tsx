@@ -20,7 +20,7 @@ const Title = styled.h1`
 `;
 
 const Tagline = styled.h2`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: ${props => props.theme.colors.blue};
 `;

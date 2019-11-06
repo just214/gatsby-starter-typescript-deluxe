@@ -87,11 +87,13 @@ The global style also includes the styles from [css-modern-reset](https://github
 
 You can define your theme styles in the `/src/styles/theme` file. The theme will be available in any styled-component via `props.theme` and to any other component via the `useTheme` hook.
 
-You can see examples of using the theme in a styled-component in the `Layout` component and an example with a regular component in the `Footer` component.
-
 #### Handling Media Queries
 
-The theme utilizes the [use-media](https://github.com/streamich/use-media) library, which allows you to track the state of a CSS media queries. This works by passing a boolean for each screen size that you defined in your theme. Just define your screen sizes in the `SCREENS` constant (in `src/styles/theme`). You can see an example of usage in the `Title` component definition in the `src/components/layout/layout.tsx` file.
+The theme utilizes the [use-media](https://github.com/streamich/use-media) library, which allows you to track the state of a CSS media queries. This works by passing a boolean for each screen size that you defined in your theme. Just define your screen sizes in `src/styles/theme`.
+
+#### Styling Examples
+
+**`src/pages/about.tsx` includes various examples (with comments) of using styled-components and framer-motion with the theme provider.**
 
 #### The CSS Prop
 
