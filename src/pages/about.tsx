@@ -62,6 +62,7 @@ const BlueBlock = styled(motion.div).attrs(() => ({
 const BlocksWrapper = styled.section`
   display: flex;
   align-items: center;
+  margin-top: 20px;
 `;
 
 const AboutPage: React.FC<RouteComponentProps> = ({ location = {} }) => {

@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  @import url("node_modules/modern-css-reset/dist/reset.min.css");
   body {
     margin: 0;
     padding: 0;
