@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: ${props => props.theme.colors.darkblue}; 
+    background: ${(props) => props.theme.colors.darkblue};
     color: white;
   }
   html {

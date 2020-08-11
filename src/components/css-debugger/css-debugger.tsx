@@ -60,11 +60,11 @@ const CSSDebugger: React.FC<CSSDebuggerProps> = ({
     color?: string;
   }>`
     html, * {
-      ${props => getDebugStyles(props)};
+      ${(props) => getDebugStyles(props)};
     }
   
     html {
-      ${props => props.debug && props.showGrid && gridStyles};
+      ${(props) => props.debug && props.showGrid && gridStyles};
     }
   `;
 
@@ -73,7 +73,7 @@ const CSSDebugger: React.FC<CSSDebuggerProps> = ({
   }, [debug]);
 
   const toggle = () => {
-    setIsDebug(v => !v);
+    setIsDebug((v) => !v);
   };
 
   const maybeRenderToggleButton = showToggle && (

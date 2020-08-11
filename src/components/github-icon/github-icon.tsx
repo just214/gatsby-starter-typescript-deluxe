@@ -26,7 +26,6 @@ const GithubIcon: React.FC = () => {
         href="https://github.com/gojutin/gatsby-starter-typescript-deluxe"
         rel="noopener noreferrer"
         target="_blank"
-        // eslint-disable-next-line @typescript-eslint/tslint/config
         css={`
           cursor: pointer;
         `}

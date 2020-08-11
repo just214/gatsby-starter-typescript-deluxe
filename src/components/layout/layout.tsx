@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: ${props => (props.theme.screens.sm ? "1.8rem" : "2.2rem")};
+  font-size: ${(props) => (props.theme.screens.sm ? "1.8rem" : "2.2rem")};
   margin: 20px 0px;
   color: white;
 `;
@@ -22,7 +22,7 @@ const Title = styled.h1`
 const Tagline = styled.h2`
   font-size: 1.1rem;
   font-weight: 400;
-  color: ${props => props.theme.colors.blue};
+  color: ${(props) => props.theme.colors.blue};
 `;
 
 const Layout: React.FC = ({ children }) => {
