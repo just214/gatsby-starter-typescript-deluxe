@@ -38,7 +38,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     "gatsby-plugin-react-helmet",
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -54,12 +53,12 @@ module.exports = {
           {
             src: "icons/icon_512x512.png",
             sizes: "512x512",
-            types: "image/png",
+
           },
           {
             src: "icons/icon_192x192.png",
             sizes: "192x192",
-            types: "image/png",
+
           },
         ],
       },

@@ -7,7 +7,7 @@ import { CSSDebugger } from "../css-debugger";
 import { Link } from "../link";
 import { Footer } from "../footer";
 
-const Container = styled.div`
+const Container = styled.main`
   margin: 0 auto;
   max-width: 1080px;
   padding: 2rem;

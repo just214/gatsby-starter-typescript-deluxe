@@ -1,6 +1,6 @@
 # gatsby-starter-typescript-deluxe 🌟
 
-### An opinionated starter library for creating React applications with Gatsby (v2) and TypeScript.
+### An opinionated starter library for creating React applications with Gatsby and TypeScript.
 
 ### [View Demo](https://gatsby-starter-typescript-deluxe.netlify.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/741aaab2-8497-431c-8b59-7f675856de77/deploy-status)](https://app.netlify.com/sites/gatsby-starter-typescript-deluxe/deploys)
 
